@@ -1,19 +1,10 @@
-@media (min-width: 992px) {
-.navbar-brand-image>img {
-    position:relative;
-    top:0;
-}
+li, li a {
+  font-family: "Titillium Web", sans serif;
 }
 
-@media (max-width: 991px) {
-.navbar-header-main .navbar-brand.navbar-brand-image>img {
-    position: absolute;
-    top:0;
-    max-height: 45px;
-    width: auto;
-}
-}
-
+########################
+###      NAVBAR      ###
+########################
 .navbar {
     border:none;
 }
@@ -27,6 +18,53 @@
     display: none;
 }
 
+/*.navbar {
+  background-color: transparent;
+}*/
+
+.navbar li, .navbar li a {
+  font-family: "Titillium Web", sans serif;
+  letter-spacing:0.15em;
+}
+
+.navbar-collapse {
+  position:fixed !important;
+  top:0;
+  left:inherit;
+  z-index:100;
+}
+
+nav.navbar-collapse.collapse.in {
+  margin:0;
+  padding:0;
+  width:185px;
+  opacity:0.95;
+  background-color:#ffdd00;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin:0;
+  padding:65px 0 20px 0;
+  width:185px;
+  font-size:18px;
+  opacity:0.95;
+  background-color:#ffdd00;
+}
+
+.navbar-main > li > a .bar {
+  display:none;
+}
+
+li.active .navbar-item-text {
+    color:#fff;
+}
+
+ul.nav navbar-nav navbar-main li.active {
+  border:none;
+  text-decoration:none;
+}
+
 .navbar-nav li a{
   margin-top: 0;
   display: block;
@@ -35,3 +73,50 @@
   text-transform:none;
   font-weight:normal;
 }
+
+.navbar-nav > li {
+  float:left;
+  width: 185px;
+}
+
+.navbar-nav > li.active  {
+  float:left;
+  background-color:#d2232a;
+  width: 185px;
+  text-decoration:none;
+  opacity:0.95;
+}
+
+/*.inmenu_logo {
+  padding:0;
+  width:185px;
+  height:125px;
+  background-color:#ffdd00;
+  opacity:0.95;
+}*/
+
+.navbar-default .navbar-nav > li > a {
+  color:#414042;
+  clear:right;
+}
+
+@media (min-width: 992px) {
+.navbar-brand-image>img {
+    position:relative;
+    top:0;
+    left:0;
+    padding:0;
+}
+}
+
+@media (max-width: 991px) {
+.navbar-header-main .navbar-brand.navbar-brand-image>img {
+    position: absolute;
+    top:0;
+    max-height: 56px;
+    width: auto;
+}
+}
+###      END OF NAVBAR      ###
+
+
