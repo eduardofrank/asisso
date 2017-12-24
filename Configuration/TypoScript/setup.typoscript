@@ -1,0 +1,58 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSSLibs {
+        googlewebfont >
+    }
+
+    includeCSS {
+        theme = EXT:asisso/Resources/Public/Less/theme.less
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        asisso_scripts = EXT:asisso/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+#############################################
+## From here onward added by Eduardo Frank ##
+#############################################
+# Error reports in plain text instead of oops
+config.contentObjectExceptionHandler = 0
+
+#### FONTS INCLUDES ###
+page.headerData.230 = TEXT
+page.headerData.230.value = <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+#### CSS INCLUDES ###
+page.includeCSS.file1 = EXT:asisso/Resources/Public/Css/asisso.css
+
+#### LOCALIZATION & TRANSLATION ###
+config {
+        linkVars = L
+        sys_language_uid = 0
+        sys_language_overlay = 1
+        sys_language_mode = content_fallback
+        language = en
+        locale_all = en_US.UTF-8
+        htmlTag_setParams = lang="en" dir="ltr" class="no-js"
+}

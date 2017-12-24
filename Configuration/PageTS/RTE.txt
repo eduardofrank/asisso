@@ -1,0 +1,44 @@
+#############
+#### RTE ####
+#############
+RTE {
+    config {
+        tt_content {
+            bodytext {
+                types {
+                    text {
+                        preset = asisso
+                    }
+                    textcolumn {
+                        preset = asisso
+                    }
+                    texticon {
+                        preset = asisso
+                    }
+                    textmedia {
+                        preset = asisso
+                    }
+                    textpic {
+                        preset = asisso
+                    }
+                    textteaser {
+                        preset = asisso
+                    }
+                    panel {
+                        preset = asisso
+                    }
+                }
+            }
+        }
+        tx_bootstrappackage_accordion_item {
+            bodytext {
+                preset = asisso
+            }
+        }
+        tx_bootstrappackage_tab_item {
+            bodytext {
+                preset = asisso
+            }
+        }
+    }
+}

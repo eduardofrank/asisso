@@ -1,0 +1,37 @@
+@media (min-width: 992px) {
+.navbar-brand-image>img {
+    position:relative;
+    top:0;
+}
+}
+
+@media (max-width: 991px) {
+.navbar-header-main .navbar-brand.navbar-brand-image>img {
+    position: absolute;
+    top:0;
+    max-height: 45px;
+    width: auto;
+}
+}
+
+.navbar {
+    border:none;
+}
+
+.navbar-default,
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:none;
+}
+
+.navbar-header:after {
+    display: none;
+}
+
+.navbar-nav li a{
+  margin-top: 0;
+  display: block;
+  float:left;
+  height:43px;
+  text-transform:none;
+  font-weight:normal;
+}

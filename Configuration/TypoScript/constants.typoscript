@@ -1,0 +1,68 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:asisso/Resources/Public/Images/logo.svg
+        fileInverted = EXT:asisso/Resources/Public/Images/logo-inverted.svg
+        height = 56
+        width = 185
+        alt = asisso
+        linktitle = asisso
+    }
+    favicon {
+        file = EXT:asisso/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:asisso/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:asisso/Resources/Private/Partials/Page/
+        templateRootPath = EXT:asisso/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:asisso/Resources/Private/Layouts/
+        partialRootPath = EXT:asisso/Resources/Private/Partials/
+        templateRootPath = EXT:asisso/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:asisso/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:asisso/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:asisso/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+#plugin.bootstrap_package.settings.less >
+#plugin.bootstrap_package.settings.overrideLessVariables >
+
+#############################################
+## From here onward added by Eduardo Frank ##
+#############################################
+config.admPanel = 0
+page.theme.language.enable = 0
+page.theme.copyright.text = © Alberto Sisso
+config.headerComment = Based on the TYPO3 Bootstrap Package by Benjamin Kott - http://www.bk2k.info. Integrator: Eduardo Frank.
+plugin.bootstrap_package.settings.less.grid-float-breakpoint = 9999
+

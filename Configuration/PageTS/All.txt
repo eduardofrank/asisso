@@ -1,0 +1,7 @@
+#
+# PageTS for asisso
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:asisso/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:asisso/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:asisso/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:asisso/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">
