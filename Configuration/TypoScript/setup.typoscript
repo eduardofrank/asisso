@@ -56,3 +56,7 @@ config {
         locale_all = en_US.UTF-8
         htmlTag_setParams = lang="en" dir="ltr" class="no-js"
 }
+
+#### FORM CONFIGURATION ###
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:asisso/Configuration/Form/myFormSetup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:asisso/Configuration/Form/myFormSetup.yaml

@@ -24,14 +24,14 @@ li, li a {
 
 .navbar li, .navbar li a {
   font-family: "Titillium Web", sans serif;
-  letter-spacing:0.15em;
+  letter-spacing:0.125em;
 }
 
 .navbar-collapse {
   position:fixed !important;
   top:0;
   left:inherit;
-  z-index:100;
+  /*z-index:100;*/
 }
 
 nav.navbar-collapse.collapse.in {
@@ -45,7 +45,7 @@ nav.navbar-collapse.collapse.in {
 ul.nav {
   list-style-type: none;
   margin:0;
-  padding:65px 0 20px 0;
+  padding:25px 0 10px 0;
   width:185px;
   font-size:18px;
   opacity:0.95;
@@ -87,13 +87,14 @@ ul.nav navbar-nav navbar-main li.active {
   opacity:0.95;
 }
 
-/*.inmenu_logo {
+.inmenu_logo {
+  margin:0;
   padding:0;
   width:185px;
-  height:125px;
+  height:56px;
   background-color:#ffdd00;
   opacity:0.95;
-}*/
+}
 
 .navbar-default .navbar-nav > li > a {
   color:#414042;
