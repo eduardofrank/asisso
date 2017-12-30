@@ -1,10 +1,18 @@
-li, li a {
+p, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, li, li a {
   font-family: "Titillium Web", sans serif;
 }
 
-########################
-###      NAVBAR      ###
-########################
+a {
+    color:#2d2d2d;
+}
+
+a:hover {
+    color:#7d7d7d;
+}
+
+/**********************/
+/***     NAVBAR     ***/
+/**********************/
 .navbar {
     border:none;
 }
@@ -18,10 +26,6 @@ li, li a {
     display: none;
 }
 
-/*.navbar {
-  background-color: transparent;
-}*/
-
 .navbar li, .navbar li a {
   font-family: "Titillium Web", sans serif;
   letter-spacing:0.125em;
@@ -31,13 +35,12 @@ li, li a {
   position:fixed !important;
   top:0;
   left:inherit;
-  /*z-index:100;*/
 }
 
 nav.navbar-collapse.collapse.in {
   margin:0;
   padding:0;
-  width:185px;
+  width:250px;
   opacity:0.95;
   background-color:#ffdd00;
 }
@@ -46,7 +49,7 @@ ul.nav {
   list-style-type: none;
   margin:0;
   padding:25px 0 10px 0;
-  width:185px;
+  width:250px;
   font-size:18px;
   opacity:0.95;
   background-color:#ffdd00;
@@ -76,13 +79,13 @@ ul.nav navbar-nav navbar-main li.active {
 
 .navbar-nav > li {
   float:left;
-  width: 185px;
+  width:250px;
 }
 
 .navbar-nav > li.active  {
   float:left;
   background-color:#d2232a;
-  width: 185px;
+  width:250px;
   text-decoration:none;
   opacity:0.95;
 }
@@ -90,8 +93,8 @@ ul.nav navbar-nav navbar-main li.active {
 .inmenu_logo {
   margin:0;
   padding:0;
-  width:185px;
-  height:56px;
+  width:250px;
+  height:80px;
   background-color:#ffdd00;
   opacity:0.95;
 }
@@ -114,10 +117,80 @@ ul.nav navbar-nav navbar-main li.active {
 .navbar-header-main .navbar-brand.navbar-brand-image>img {
     position: absolute;
     top:0;
-    max-height: 56px;
+    max-height:80px;
     width: auto;
 }
 }
-###      END OF NAVBAR      ###
+/**  END OF NAVBAR   **/
 
+/**********************/
+/**       FORM       **/
+/**********************/
 
+@media (min-width: 992px) {
+#c3.frame {
+    padding: 0 150px;
+}
+}
+
+/**   END OF FORM   **/
+
+/**********************/
+/**   NEWS PLUGIN    **/
+/**********************/
+
+.news-list-item .extra,
+.btn-read-more {
+  display:none;
+}
+
+.extra {
+  display:none;
+}
+
+.thumbnail {
+    border:none;
+}
+
+.footer {
+  display:none;
+}
+
+a.more {
+  display:none;
+}
+
+.news-list-view h3 {
+  margin:3px 0 0 0;
+}
+
+.news-list-view p {
+  margin:0;
+  font-size: 1em;
+  line-height:0.75;
+}
+
+@media (min-width: 768px){
+.news-list-item {
+  margin:auto;
+  padding:0 0.25em;
+  float:left;
+  width:33.33%;
+}
+}
+
+.news .col-md-8 {
+  padding-left:0;
+}
+
+#p5 .lead {
+  display:none;
+}
+
+div.gallery-row > :first-child {
+  margin-left:-2px;
+}
+
+.back_arrow {
+  font-size: 1.5em;
+}

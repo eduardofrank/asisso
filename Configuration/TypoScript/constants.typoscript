@@ -65,4 +65,11 @@ page.theme.language.enable = 0
 page.theme.copyright.text = © Alberto Sisso
 config.headerComment = Based on the TYPO3 Bootstrap Package by Benjamin Kott - http://www.bk2k.info. Integrator: Eduardo Frank.
 plugin.bootstrap_package.settings.less.grid-float-breakpoint = 9999
+plugin.tx_news {
+    view.twb {
+                templateRootPath = EXT:asisso/Resources/Private/Templates/Styles/Twb/Templates
+                partialRootPath = EXT:asisso/Resources/Private/Templates/Styles/Twb/Partials/
+                layoutRootPath = EXT:asisso/Resources/Private/Templates/Styles/Twb/Layouts/
+            }
+}
 
