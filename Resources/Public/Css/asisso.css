@@ -35,6 +35,7 @@ a:hover {
   position:fixed !important;
   top:0;
   left:inherit;
+  z-index:100;
 }
 
 nav.navbar-collapse.collapse.in {
@@ -104,6 +105,10 @@ ul.nav navbar-nav navbar-main li.active {
   clear:right;
 }
 
+.navbar-default .navbar-nav > li > a:hover {
+  color:#fff;
+}
+
 @media (min-width: 992px) {
 .navbar-brand-image>img {
     position:relative;
@@ -122,6 +127,61 @@ ul.nav navbar-nav navbar-main li.active {
 }
 }
 /**  END OF NAVBAR   **/
+
+/**********************/
+/**    SMALLMENU     **/
+/**********************/
+
+#smallmenu.navbar-header.navbar-header-main {
+  position:fixed;
+  top:-999px;
+  height:0;
+  padding:0;
+  margin-left:0;
+}
+
+#smallmenu.navbar-header.navbar-header-main.scrolled img {
+  margin-left:-20px;
+  padding:0;
+  width:250px;
+  height:80px;
+}
+
+#smallmenu.navbar-header.navbar-header-main.scrolled button {
+    margin-top: 5px;
+}
+
+#smallmenu.navbar-header.navbar-header-main.scrolled {
+  width:inherit;
+  height:80px;
+  background-color:#ffdd00;
+  position:fixed;
+  top:0;
+  z-index:50;
+  box-shadow: 0 1px 0px rgba(0,0,0,.15);
+  transition: all .9s;
+  opacity:0.95;
+}
+
+@media (max-width: 768px) {
+#smallmenu.navbar-header.navbar-header-main.scrolled {
+  width:100%;
+  height:80px;
+  background-color:#ffdd00;
+  position:fixed;
+  top:0;
+  z-index:50;
+  box-shadow: 0 1px 0px rgba(0,0,0,.15);
+  transition: all .9s;
+  opacity:0.95;
+}
+#smallmenu.navbar-header.navbar-header-main.scrolled button {
+    margin-top: 5px;
+    margin-right:40px;
+}
+}
+
+/**  END OF SMALLMENU   **/
 
 /**********************/
 /**       FORM       **/
@@ -170,6 +230,10 @@ a.more {
   line-height:0.75;
 }
 
+.news-single h1 {
+    color:#d2232a;
+}
+
 @media (min-width: 768px){
 .news-list-item {
   margin:auto;
@@ -187,10 +251,78 @@ a.more {
   display:none;
 }
 
+#p5 h3 {
+  font-size:1.2em;
+}
+@media (min-width: 768px) {
+#p5 .col-md-12 {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#p5 .col-md-12 img {
+    width:350px;
+}
+}
+
+@media (min-width: 480px) {
+#p5 .col-md-12 img {
+    min-width:100%;
+}
+
+#p5 .news-list-item {
+    margin-left:0;
+    margin-right:0;
+}
+
+/*#p5 img {
+    width:340px;
+}*/
+}
+
+@media (min-width: 320px) {
+#p5 .col-md-12 img {
+    min-width:100%;
+}
+
+#p5 h3 {
+    margin-bottom:20px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+#p5 h3 {
+    font-size:.9em;
+}
+}
+
+/***** Hack para evitar problema de flex en safari *****/
 div.gallery-row > :first-child {
   margin-left:-2px;
 }
 
 .back_arrow {
   font-size: 1.5em;
+}
+
+#p8 .caption {
+    display:none;
+}
+/*************************/
+/******** LIGHTBOX *******/
+/*************************/
+
+.pswp__bg {
+  background-color:white;
+}
+
+.pswp__caption__center,
+.pswp__caption__subtitle {
+  color:#000;
+  opacity:1;
+}
+
+.pswp__caption__title {
+  font-style:italic;
+  font-weight:700;
 }

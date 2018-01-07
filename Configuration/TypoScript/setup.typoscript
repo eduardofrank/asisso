@@ -30,6 +30,7 @@ page {
 
     includeJSFooter {
         asisso_scripts = EXT:asisso/Resources/Public/JavaScript/Dist/scripts.js
+        smallmenu = EXT:asisso/Resources/Public/JavaScript/Dist/smallmenu.js
     }
 }
 
@@ -45,6 +46,10 @@ page.headerData.230.value = <link href="https://fonts.googleapis.com/css?family=
 
 #### CSS INCLUDES ###
 page.includeCSS.file1 = EXT:asisso/Resources/Public/Css/asisso.css
+
+#### SMALL LOGO IN HEADER ###
+lib.sm-logo = TEXT
+lib.sm-logo.value = EXT:asisso/Resources/Public/Images/logo_menu.svg
 
 #### LOCALIZATION & TRANSLATION ###
 config {
